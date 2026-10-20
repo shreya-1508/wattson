@@ -1,0 +1,28 @@
+{
+  "area": "dom",
+  "best_model": "gbm",
+  "scores": [
+    {
+      "model": "gbm",
+      "mape_pct": 4.1650782372315795,
+      "peak_mape_pct": 4.500764692162231,
+      "mae_mw": 721.810483200351,
+      "hours": 7995
+    },
+    {
+      "model": "day_naive",
+      "mape_pct": 6.181413919894033,
+      "peak_mape_pct": 6.877949961292301,
+      "mae_mw": 1049.1588749378618,
+      "hours": 7995
+    },
+    {
+      "model": "seasonal_naive",
+      "mape_pct": 9.529420892660383,
+      "peak_mape_pct": 10.649695653373339,
+      "mae_mw": 1628.9301486505988,
+      "hours": 7995
+    }
+  ],
+  "baseload_growth_pct_per_year": 7.330933610613845
+}

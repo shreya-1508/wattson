@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Secrets: never commit your API key
+.env
+.env.txt
+
+# Downloaded data and trained model (rebuilt by `python -m gridcast setup-home` and `fetch`)
+data/**
+!data/.gitkeep
+
+# Synthetic demo output (real results in reports/ are committed so the app's Grid tab works)
+reports/synthetic_*

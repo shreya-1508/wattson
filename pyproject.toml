@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gridcast"
+version = "0.1.0"
+description = "Wattson: estimated electricity bills for Virginia homes, mapped alongside data center growth"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.0",
+  "numpy>=1.24",
+  "scikit-learn>=1.3",
+  "requests>=2.31",
+  "tzdata>=2024.1",  # Windows has no built-in time zone database
+]
+
+[project.optional-dependencies]
+app = ["streamlit>=1.40", "folium>=0.17", "streamlit-folium>=0.22"]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
